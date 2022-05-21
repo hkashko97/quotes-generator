@@ -1,0 +1,74 @@
+.card {
+    width: 50%;
+    height: 200px;
+    max-height: 80%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: white;
+    font-family: 'Bangers', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 24px;
+    box-shadow: 0 0 10px 3px #c2c2c2;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.btn{
+    position:absolute;
+    top: -25px;
+    right: -25px;
+    background: rgba(255, 213, 113, .5);
+    border: 1px solid rgb(255, 213, 113);
+    color: #ee70e3;
+    font-size:40px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height:50px;
+    outline: none;
+}
+.btn:hover{
+    box-shadow: 0 0 5px rgb(240, 154, 233);
+}
+
+/* colors palette*/
+.default-theme{
+    background: rgb(34, 193, 195);
+    background: linear-gradient(216deg, rgba(34, 193, 195, 1) 0%, rgba(255, 213, 113, 1) 100%);
+}
+
+.theme-1 {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(216deg, rgba(34, 193, 195, 1) 0%, rgba(255, 213, 113, 1) 100%);
+}
+
+.theme-2 {
+    background: rgb(240, 154, 233);
+    background: linear-gradient(216deg, rgba(240, 154, 233, 1) 0%, rgba(255, 213, 113, 1) 100%);
+}
+
+.theme-3 {
+    background: rgb(173, 228, 152);
+    background: linear-gradient(216deg, rgba(173, 228, 152, 1) 0%, rgba(113, 219, 255, 1) 100%);
+}
+
+.theme-4 {
+    background: rgb(255, 213, 113);
+    background: linear-gradient(150deg, rgba(255, 213, 113, 1) 0%, rgba(123, 30, 253, 0.8410714627647934) 100%);
+}
+
+@media screen and (max-width: 480px){
+    .card {
+        width: 75%;
+        font-size: 20px;
+    }
+}
